@@ -10,8 +10,8 @@ const MainPage = () => {
         <div className="flex flex-col items-center justify-center mx-auto text-center w-[400px] min-w-[200px] pt-36">
             <Card>
                 <CardHeader>
-                    <CardTitle className="mb-3 text-[1.7rem]">Welcome to Help4Paws</CardTitle>
-                    <CardDescription className="text-[1rem]">A website to donate to our NGO. We have two options, one yearly and the other one time payment 🧑‍⚕️🧬</CardDescription>
+                    <CardTitle className="mb-3 text-[1.7rem] underline">Welcome to Help4Paws</CardTitle>
+                    <CardDescription className="text-[1rem]">Website to donate to our NGO Help4Paws. We are a group, who aims at betterment of animals through you support. Donate us the amount and as per our subscription and join our  <span className="font-bold">&quot; movement for good &quot;</span> 🧑‍⚕️🧬</CardDescription>
                 </CardHeader>
 
                 <CardContent className="space-x-4">

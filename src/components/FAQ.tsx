@@ -11,8 +11,8 @@ import { faqData, faqDataProps } from "./data/FAQ-data"
 export default function FAQSection() {
     return (
         <Accordion type="single" collapsible className="w-full">
-            {faqData.map((values: faqDataProps) => (
-                <AccordionItem value={values.value}>
+            {faqData.map((values: faqDataProps, index: number) => (
+                <AccordionItem value={values.value} key={index}>
                     <AccordionTrigger>{values.accordionHeading}</AccordionTrigger>
                     <AccordionContent>
                         {values.accordionDesc}

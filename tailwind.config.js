@@ -6,14 +6,19 @@ module.exports = {
     './components/**/*.{ts,tsx}',
     './app/**/*.{ts,tsx}',
     './src/**/*.{ts,tsx}',
-	],
+  ],
   theme: {
+    screens: {
+      'sm': { 'max': '639px' },
+      'md': { 'max': '767px' },
+      'lg': { 'max': '1023px' },
+      'xl': { 'max': '1279px' },
+      '2xl': { 'max': '1535px' },
+      '3xl': '1536px'
+    },
     container: {
       center: true,
       padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
     },
     extend: {
       colors: {

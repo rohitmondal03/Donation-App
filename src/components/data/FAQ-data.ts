@@ -19,6 +19,6 @@ export const faqData: faqDataProps[] = [
     {
         value: "item-3",
         accordionHeading: "What are subscriptions avaliable ?",
-        accordionDesc: "There are 2 subscription avaliable, one yearly that costs around $300 and other one time payment which costs $30."
+        accordionDesc: "There are 2 subscription avaliable, one yearly that costs around $300 and other monthly which costs around $30/mo."
     }
 ]
