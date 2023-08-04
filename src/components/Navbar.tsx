@@ -44,15 +44,20 @@ const Navbar = async () => {
 
 
                 <div className="block sm:hidden">
-                    <Sheet>
-                        <SheetTrigger>
-                            <MenuIcon size={20} className="mt-2" />
-                        </SheetTrigger>
+                    {!user ? (
+                        <Sheet>
+                            <SheetTrigger>
+                                <MenuIcon size={20} className="mt-2" />
+                            </SheetTrigger>
 
-                        <SheetContent side={`right`}>
+                            <SheetContent side={`right`}>
                                 <Sidebar />
-                        </SheetContent>
-                    </Sheet>
+                            </SheetContent>
+                        </Sheet>
+                    ) : (
+                        <UserButton afterSignOutUrl="/" />
+                    )}
+
                 </div>
             </div>
         </nav>
