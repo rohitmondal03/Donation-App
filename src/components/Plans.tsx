@@ -1,13 +1,15 @@
 "use client"
 
+import { redirect } from "next/navigation"
 import Image from "next/image"
 
 import { Card, CardHeader, CardContent, CardDescription, CardTitle } from "@/components/ui/card"
 import { AspectRatio } from "@/components/ui/aspect-ratio"
 import { Button } from "@/components/ui/button"
-import { Separator } from "@/components/ui/separator"
+
 
 import { Props } from "./data/plans"
+import Link from "next/link"
 
 
 const Plans = (props: Props) => {
@@ -15,20 +17,29 @@ const Plans = (props: Props) => {
         <Card>
             <CardHeader>
                 <CardTitle className="text-3xl">{props.cardTitle}</CardTitle>
-                <AspectRatio ratio={15 / 9} className="flex items-center justify-center">
+                <AspectRatio ratio={12 / 9} className="flex items-center justify-center">
                     <Image
                         src={props.imgSrc}
-                        alt="demo"
-                        height={300}
-                        width={300}
+                        alt={`${props.cardTitle} image`}
+                        height={500}
+                        width={500}
+                        className="rounded-2xl"
                     />
                 </AspectRatio>
+                <CardDescription className="text-[1.1rem]">{props.cardDesc}</CardDescription>
             </CardHeader>
 
             <CardContent>
-                <CardDescription className="text-[1.1rem]">{props.cardDesc}</CardDescription>
-                <Separator orientation="horizontal" className="h-[5px] my-3" />
-                <Button>{props.cardTitle} link</Button>
+                <Link href={props.link} legacyBehavior>
+                    <a target="_blank">
+                        <Button
+                            variant={"link"}
+                            className="border-zinc-900 border dark:border-zinc-400"
+                        >
+                            {props.cardTitle} link
+                        </Button>
+                    </a>
+                </Link>
             </CardContent>
         </Card>
     )

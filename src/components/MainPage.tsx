@@ -7,7 +7,7 @@ import FAQSection from "./FAQ"
 
 const MainPage = () => {
     return (
-        <div className="flex flex-col items-center justify-center mx-auto text-center w-[400px] min-w-[200px] pt-36">
+        <div className="flex flex-col items-center justify-center mx-auto text-center w-[400px] min-w-[200px] pt-36 px-12 sm:px-0">
             <Card>
                 <CardHeader>
                     <CardTitle className="mb-3 text-[1.7rem] underline">Welcome to Help4Paws</CardTitle>

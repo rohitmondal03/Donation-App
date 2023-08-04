@@ -4,7 +4,7 @@ import Plans from "@/components/Plans"
 
 const Dashboard = () => {
   return (
-    <div className="text-center pt-36 flex items-center justify-center gap-x-24 sm:px-10 sm:gap-y-7 md:px-28  lg:flex-col lg:gap-y-12  2xl:px-20 3xl:px-28">
+    <div className="text-center py-36 flex items-center justify-center flex-col px-12 gap-y-10 md:flex-row md:gap-x-12 md:px-20">
       {plansData.map((data: Props, index: number) => (
         <Plans
           key={index}
