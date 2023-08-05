@@ -14,9 +14,9 @@ const Navbar = async () => {
     const user = await currentUser();
 
     return (
-        <nav className="flex flex-row items-center justify-around py-5 fixed inset-x-0 border-b-2 border-zinc-600 backdrop-blur-3xl z-10 px-2 sm:px-0">
+        <nav className="flex flex-row items-center justify-around py-5  fixed inset-x-0 border-b-2 border-zinc-600 backdrop-blur-3xl z-10 px-2 sm:px-0">
             <Link href={`/`}>
-                <h1 className="text-3xl hover:underline cursor-pointer">Help4Paws</h1>
+                <h1 className="text-xl sm:text-2xl hover:underline cursor-pointer">Help4Paws</h1>
             </Link>
 
             <div className="flex flex-row items-center gap-x-5">
