@@ -19,7 +19,7 @@ const Navbar = async () => {
                 <h1 className="text-xl sm:text-2xl hover:underline cursor-pointer">Help4Paws</h1>
             </Link>
 
-            <div className="flex flex-row items-center gap-x-5">
+            <div className="flex flex-row items-center gap-x-6">
                 <ThemeToggle />
 
                 <div className="hidden sm:block space-x-1">
